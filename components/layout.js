@@ -45,7 +45,7 @@ const Header = () => {
 const Footer = () => {
   return (
     <footer className="container">
-      <p>&copy; 2020-21 <a href="https://github.com/Majekdor">Majekdor</a></p>
+      <p>&copy; 2020-22 <a href="https://github.com/Majekdor">Majekdor</a></p>
     </footer>
   )
 }

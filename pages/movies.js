@@ -13,11 +13,9 @@ export default function Movies() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(textInput.current.value);
-        getSelection(textInput.current.value).then(selection => {
+        getSelection(textInput.current.value.toLowerCase()).then(selection => {
             setSelection(selection);
         })
-        console.log('You clicked submit.');
     }
 
     function handleKeyDown(e) {
@@ -79,8 +77,6 @@ async function getSelection(category) {
         category = movieArray[getRandom(0, movieArray.length - 1)];
     }
 
-    console.log(movies);
-    console.log(category);
     let catJson = movies[category];
     if (catJson === undefined) {
         return "Selection: Unknown Category.";

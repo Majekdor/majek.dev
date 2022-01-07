@@ -14,10 +14,7 @@ export default function FarLands() {
                     <p>FarLands v1 ran from <b>January 27th, 2019</b> until <b>June 17th, 2019</b>.</p>
                     <ul>
                         <li>
-                            <a href="">
-                                <button><FontAwesomeIcon icon={faDownload}/> Download Map</button></a> - Download the v1 map.
-                            <br/>
-                            <p><b>Warning</b>: The v1 map is 20GB!</p>
+                            <p>Unfortunately I do not have the v1 map at this time.</p>
                         </li>
                         <li>
                             <a href="https://files.majek.dev/flv1homes.txt"><button><FontAwesomeIcon icon={faEye}/> View Homes</button></a> - View a list of player homes from v1.

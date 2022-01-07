@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import NextLink from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useAmp } from 'next/amp';
@@ -19,6 +19,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Header />
+        <Nav />
       <Footer />
     </div>
   )
@@ -30,16 +31,45 @@ const Header = () => {
 
   return (
     <header className="container">
-      {!isAmp && <img src="/assets/logo.png" alt="Me" />}
-      {router.pathname === '/'
-        ? <h1>majek.dev</h1>
-        : <h1><Link href="/">majek.dev</Link></h1>
-      }
+        <img src="/assets/logo.png" alt="Me" />
+        <h1>majek.dev</h1>
       <p>Hey! 👋</p>
       <p>I'm Majek, a student from North Carolina.</p>
       <p>This is a personal website and domain that I use for the various open-source projects I work on.</p>
     </header>
   )
+}
+
+const Nav = () => {
+    return (
+        <nav>
+            <ul>
+                <Link name="/home" url="/" />
+                <Link name="/contact" url="/contact" />
+                <Link name="/movies" url="/movies" />
+                <Link name="/tvshows" url="/tvshows" />
+            </ul>
+        </nav>
+    )
+}
+
+const Link = ({ name, url }) => {
+    const router = useRouter();
+    if (url === router.pathname) {
+        return (
+            <li className="current-page">
+                {name}
+            </li>
+        )
+    } else {
+        return (
+            <li className="other-page">
+                <NextLink href={url}>
+                    {name}
+                </NextLink>
+            </li>
+        )
+    }
 }
 
 const Footer = () => {

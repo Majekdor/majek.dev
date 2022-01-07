@@ -37,7 +37,7 @@ export default function Movies() {
                 <h2>Pick a category: </h2>
                 <textarea ref={textInput} id="select" name="text" placeholder="Type category here" onKeyDown={handleKeyDown}/>
                 <br/>
-                <button type="submit" onClick={handleSubmit}>Submit</button>
+                <button type="submit" onClick={handleSubmit}>Find A Movie</button>
                 <br/>
                 <br/>
                 <p>{selection}</p>

@@ -243,10 +243,6 @@ details summary:focus {
   color: rgba(255, 255, 255, .80);
   background-color: #1f2833;
 }
-  /* Sidebar links */
-  a {
-    color: #fff;
-  }
 
 @media (min-width: 48em) {
   .sidebar {

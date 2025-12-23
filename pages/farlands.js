@@ -41,7 +41,7 @@ export default function FarLands() {
                     <p>FarLands v3 ran from <b>July 11th, 2020</b> until <b>December 31st, 2021</b>.</p>
                     <ul>
                         <li>
-                            <a href="https://farlandsmc.s3.amazonaws.com/farlandsv4.zip">
+                            <a href="https://farlandsmc.s3.amazonaws.com/farlandsv3.zip">
                                 <button><FontAwesomeIcon icon={faDownload} /> Download Map</button></a> - Download the v3 map.
                             <br/>
                             <p><b>Warning</b>: The v3 map is 40GB!</p>

@@ -6,6 +6,7 @@ export default function Home() {
     <Layout>
       <AboutMe />
       <Domain />
+      <Documentation />
       <Projects />
     </Layout>
   )
@@ -30,10 +31,26 @@ const Domain = () => {
       <h1>This domain</h1>
       <p>There are some sites and services available under this domain.</p>
       <ul>
-        <li><a href="https://repo.majek.dev/"><b>repo.</b>majek.dev</a> - maven repository</li>
-        <li><a href="https://bytebin.majek.dev/"><b>bytebin.</b>majek.dev</a> - content storage web service</li>
+        <li><a href="https://repo.majek.dev/"><b>repo.</b>majek.dev</a> - my Maven repository</li>
+        <li><a href="https://paste.majek.dev/"><b>paste.</b>majek.dev</a> - a pastebin service</li>
+        <li><a href="https://bytebin.majek.dev/"><b>bytebin.</b>majek.dev</a> - a content storage web service</li>
       </ul>
-      <p>I try my best to keep these services available. My Maven repository has had good uptime for over a year now.</p>
+      <p><b>paste</b> and <b>bytebin</b> were both written by <a href="https://github.com/lucko">lucko</a>, and all credit for them
+        goes to him. I run my own instances rather than depending on his, since I rely on them for things like the web-based
+        config editor in <a href="https://github.com/MajekDev/HexNicks">HexNicks</a>.</p>
+      <p>I try my best to keep these services available. My Maven repository has had good uptime for over 5 years now.</p>
+    </article>
+  )
+}
+
+const Documentation = () => {
+  return (
+    <article>
+      <h1>Documentation</h1>
+      <p>Documentation for some of my plugins is also hosted under this domain, built with <a href="https://docusaurus.io/">Docusaurus</a>.</p>
+      <ul>
+        <li><a href="https://hexnicks.majek.dev/"><b>hexnicks.</b>majek.dev</a> - docs for HexNicks</li>
+      </ul>
     </article>
   )
 }

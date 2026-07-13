@@ -32,6 +32,7 @@ export default function Layout({ children, title = '' }) {
       <title>{'majek.dev' + (title && ' | ' + title)}</title>
       <meta charSet="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+      <script defer src="https://metrics.kevbarnes.com/script.js" data-website-id="772c9702-d5e7-46e8-925d-f862e42c8742"></script>
     </Head>
     <Sidebar theme={theme} onChooseTheme={chooseTheme} />
     <Content children={children} />

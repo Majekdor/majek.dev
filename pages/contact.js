@@ -17,13 +17,13 @@ export default function Contact() {
         </Section>
 
         <Section title="Questions about my other projects">
-          <p>If you have any questions about my other projects feel free to email me at <a href="mailto:kev@majek.dev">kev@majek.dev</a> and I'll
+          <p>If you have any questions about my other projects feel free to email me at <a href="mailto:majekdor@gmail.com">majekdor@gmail.com</a> and I'll
             try to get back to you as soon as possible. If it's a bug please open an issue on GitHub!</p>
         </Section>
 
         <Section title="Other">
           <p>If you are sure that your question / message doesn't fall into any of the categories above, feel free to
-            email me at <a href="mailto:kev@majek.dev">kev@majek.dev</a> or join my <a href="https://discord.majek.dev">Discord</a>.</p>
+            email me at <a href="mailto:majekdor@gmail.com">majekdor@gmail.com</a> or join my <a href="https://discord.majek.dev">Discord</a>.</p>
         </Section>
 
       </article>
